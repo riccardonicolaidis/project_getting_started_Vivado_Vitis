@@ -37,6 +37,7 @@ Let's see step by step what to do with Vivado software
 6. Now we need to add to the design the Microblaze processor. Open the IP catalogue and search for "Microblaze". Add it to the design. Click on "Run Block Automation" and set the memory to "128 KB", the allowed maximum value. The basic Microblaze block design is reported below.  
 ![Microblaze block design](docs/assets/images/step_1.png)
 
+
 7. Now we are going to add the GPIO peripherals to the design. Open the Board panel, right click the output 4LEDs and click on "Connect board component". Select the "GPIO" IP on the pop-up panel. Rename the IP to "AXI_GPIO_LED". Now add manually a second GPIO component and name it "AXI_GPIO_BUTTONS". Click on the GPIO pin and "Make external" in order to have an output pin. Rename this external pin to "btn". The output pin has to be connected to the phisical pins on the board. To do this, the XDC file is used. The costraint file has the task to connect the input-output pins from the top-module to the physical devices on the board. Since the default GPIO width is 32 we need to change it to 4. The XDC setup will follow in the last part of this tutorial. Now we can click on "Run connection automation". As it is possible to see, an AXI peripheral interconnect component will appear into our design. This element is essential. 
 
 8. Add the AXI Uartlite component to the design. Make external the UART pin at output/input. Run the "connection automation". The final block design is reported in the following picture.
