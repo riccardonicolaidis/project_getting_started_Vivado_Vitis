@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Mon Mar 28 12:21:11 2022
-# Process ID: 16576
+# Start of session at: Mon Mar 28 17:52:19 2022
+# Process ID: 904
 # Current directory: C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/design_1_wrapper.vds

@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-//Date        : Mon Mar 28 12:09:07 2022
+//Date        : Mon Mar 28 17:50:05 2022
 //Host        : LAPTOP-LB6J3CUA running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,21 +10,21 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (UART_0_rxd,
-    UART_0_txd,
+   (UART_rxd,
+    UART_txd,
     btn_tri_io,
-    clk_in1_0,
     led_4bits_tri_o,
-    reset_0);
-  input UART_0_rxd;
-  output UART_0_txd;
+    reset,
+    sys_clock);
+  input UART_rxd;
+  output UART_txd;
   inout [3:0]btn_tri_io;
-  input clk_in1_0;
   output [3:0]led_4bits_tri_o;
-  input reset_0;
+  input reset;
+  input sys_clock;
 
-  wire UART_0_rxd;
-  wire UART_0_txd;
+  wire UART_rxd;
+  wire UART_txd;
   wire [0:0]btn_tri_i_0;
   wire [1:1]btn_tri_i_1;
   wire [2:2]btn_tri_i_2;
@@ -41,9 +41,9 @@ module design_1_wrapper
   wire [1:1]btn_tri_t_1;
   wire [2:2]btn_tri_t_2;
   wire [3:3]btn_tri_t_3;
-  wire clk_in1_0;
   wire [3:0]led_4bits_tri_o;
-  wire reset_0;
+  wire reset;
+  wire sys_clock;
 
   IOBUF btn_tri_iobuf_0
        (.I(btn_tri_o_0),
@@ -66,12 +66,12 @@ module design_1_wrapper
         .O(btn_tri_i_3),
         .T(btn_tri_t_3));
   design_1 design_1_i
-       (.UART_0_rxd(UART_0_rxd),
-        .UART_0_txd(UART_0_txd),
+       (.UART_rxd(UART_rxd),
+        .UART_txd(UART_txd),
         .btn_tri_i({btn_tri_i_3,btn_tri_i_2,btn_tri_i_1,btn_tri_i_0}),
         .btn_tri_o({btn_tri_o_3,btn_tri_o_2,btn_tri_o_1,btn_tri_o_0}),
         .btn_tri_t({btn_tri_t_3,btn_tri_t_2,btn_tri_t_1,btn_tri_t_0}),
-        .clk_in1_0(clk_in1_0),
         .led_4bits_tri_o(led_4bits_tri_o),
-        .reset_0(reset_0));
+        .reset(reset),
+        .sys_clock(sys_clock));
 endmodule

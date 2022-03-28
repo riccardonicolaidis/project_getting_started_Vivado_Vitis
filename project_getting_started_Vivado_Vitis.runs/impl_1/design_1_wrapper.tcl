@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -122,7 +124,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 2
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35ticsg324-1L
   set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
@@ -142,6 +146,9 @@ OPTRACE "add files" START { }
   set_param project.isImplRun true
   add_files C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
+  add_files C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf
+  set_property SCOPED_TO_REF design_1 [get_files -all C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf]
+  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf]
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc
 OPTRACE "read constraints: implementation" END { }
