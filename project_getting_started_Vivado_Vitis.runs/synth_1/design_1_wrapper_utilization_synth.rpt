@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Mon Mar 28 17:53:04 2022
+| Date         : Tue Mar 29 00:14:49 2022
 | Host         : LAPTOP-LB6J3CUA running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -149,31 +149,30 @@ Table of Contents
 +----------+------+---------------------+
 | IBUF     |    6 |                  IO |
 | OBUF     |    5 |                  IO |
-| OBUFT    |    4 |                  IO |
 +----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+--------------------------------+------+
-|            Ref Name            | Used |
-+--------------------------------+------+
-| design_1_xbar_2                |    1 |
-| design_1_util_vector_logic_0_0 |    1 |
-| design_1_rst_clk_wiz_0_100M_2  |    1 |
-| design_1_microblaze_0_1        |    1 |
-| design_1_mdm_1_2               |    1 |
-| design_1_lmb_bram_2            |    1 |
-| design_1_ilmb_v10_2            |    1 |
-| design_1_ilmb_bram_if_cntlr_2  |    1 |
-| design_1_dlmb_v10_2            |    1 |
-| design_1_dlmb_bram_if_cntlr_2  |    1 |
-| design_1_clk_wiz_0_1           |    1 |
-| design_1_axi_uartlite_0_1      |    1 |
-| design_1_axi_gpio_0_3          |    1 |
-| design_1_axi_gpio_0_2          |    1 |
-+--------------------------------+------+
++-------------------------------+------+
+|            Ref Name           | Used |
++-------------------------------+------+
+| design_1_xbar_3               |    1 |
+| design_1_rst_clk_wiz_0_100M_3 |    1 |
+| design_1_reset_inv_0_0        |    1 |
+| design_1_microblaze_0_2       |    1 |
+| design_1_mdm_1_3              |    1 |
+| design_1_lmb_bram_3           |    1 |
+| design_1_ilmb_v10_3           |    1 |
+| design_1_ilmb_bram_if_cntlr_3 |    1 |
+| design_1_dlmb_v10_3           |    1 |
+| design_1_dlmb_bram_if_cntlr_3 |    1 |
+| design_1_clk_wiz_0_2          |    1 |
+| design_1_axi_uartlite_0_2     |    1 |
+| design_1_axi_gpio_1_0         |    1 |
+| design_1_axi_gpio_0_4         |    1 |
++-------------------------------+------+
 
 
 9. Instantiated Netlists

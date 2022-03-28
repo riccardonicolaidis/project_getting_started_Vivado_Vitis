@@ -70,11 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35ticsg324-1L
 
@@ -92,39 +88,36 @@ set_property ip_output_repo c:/Users/rikir/Documents/FPGA_projects/project_getti
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf
-set_property SCOPED_TO_REF design_1 [get_files -all C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf]
-set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf]
 read_verilog -library xil_defaultlib C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/design_1_dlmb_v10_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/design_1_ilmb_v10_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_2/design_1_dlmb_bram_if_cntlr_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_2/design_1_ilmb_bram_if_cntlr_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_2/design_1_lmb_bram_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_2/design_1_mdm_1_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_2/design_1_mdm_1_2_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_2_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_2/design_1_microblaze_0_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_2/design_1_microblaze_0_2_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_2/design_1_microblaze_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_3/design_1_dlmb_v10_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_3/design_1_ilmb_v10_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_3/design_1_lmb_bram_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_3/design_1_mdm_1_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_3/design_1_mdm_1_3_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/design_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_2/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

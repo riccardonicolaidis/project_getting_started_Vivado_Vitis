@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xDE07AFE994653B8F",
+      "boundary_crc": "0xFEF42DB635B9798E",
       "device": "xc7a35ticsg324-1L",
       "gen_directory": "../../../../project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -12,6 +12,7 @@
     },
     "design_tree": {
       "clk_wiz_0": "",
+      "reset_inv_0": "",
       "microblaze_0": "",
       "microblaze_0_local_memory": {
         "dlmb_v10": "",
@@ -22,9 +23,8 @@
       },
       "mdm_1": "",
       "rst_clk_wiz_0_100M": "",
-      "util_vector_logic_0": "",
-      "AXI_GPIO_LEDs": "",
-      "AXI_GPIO_BTNs": "",
+      "AXI_GPIO_LED": "",
+      "AXI_GPIO_BUTTONS": "",
       "axi_uartlite_0": "",
       "microblaze_0_axi_periph": {
         "xbar": "",
@@ -40,7 +40,7 @@
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       },
-      "btn": {
+      "push_buttons_4bits": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
@@ -85,7 +85,7 @@
             "value_src": "default"
           },
           "POLARITY": {
-            "value": "ACTIVE_HIGH"
+            "value": "ACTIVE_LOW"
           }
         }
       }
@@ -93,15 +93,15 @@
     "components": {
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "design_1_clk_wiz_0_1",
-        "xci_path": "ip\\design_1_clk_wiz_0_1\\design_1_clk_wiz_0_1.xci",
+        "xci_name": "design_1_clk_wiz_0_2",
+        "xci_path": "ip\\design_1_clk_wiz_0_2\\design_1_clk_wiz_0_2.xci",
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
           "CLK_IN1_BOARD_INTERFACE": {
             "value": "sys_clock"
           },
           "RESET_BOARD_INTERFACE": {
-            "value": "Custom"
+            "value": "reset"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -111,10 +111,24 @@
           }
         }
       },
+      "reset_inv_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_reset_inv_0_0",
+        "xci_path": "ip\\design_1_reset_inv_0_0\\design_1_reset_inv_0_0.xci",
+        "inst_hier_path": "reset_inv_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
       "microblaze_0": {
         "vlnv": "xilinx.com:ip:microblaze:11.0",
-        "xci_name": "design_1_microblaze_0_1",
-        "xci_path": "ip\\design_1_microblaze_0_1\\design_1_microblaze_0_1.xci",
+        "xci_name": "design_1_microblaze_0_2",
+        "xci_path": "ip\\design_1_microblaze_0_2\\design_1_microblaze_0_2.xci",
         "inst_hier_path": "microblaze_0",
         "parameters": {
           "C_DEBUG_ENABLED": {
@@ -211,8 +225,8 @@
         "components": {
           "dlmb_v10": {
             "vlnv": "xilinx.com:ip:lmb_v10:3.0",
-            "xci_name": "design_1_dlmb_v10_2",
-            "xci_path": "ip\\design_1_dlmb_v10_2\\design_1_dlmb_v10_2.xci",
+            "xci_name": "design_1_dlmb_v10_3",
+            "xci_path": "ip\\design_1_dlmb_v10_3\\design_1_dlmb_v10_3.xci",
             "inst_hier_path": "microblaze_0_local_memory/dlmb_v10",
             "interface_ports": {
               "LMB_M": {
@@ -226,8 +240,8 @@
           },
           "ilmb_v10": {
             "vlnv": "xilinx.com:ip:lmb_v10:3.0",
-            "xci_name": "design_1_ilmb_v10_2",
-            "xci_path": "ip\\design_1_ilmb_v10_2\\design_1_ilmb_v10_2.xci",
+            "xci_name": "design_1_ilmb_v10_3",
+            "xci_path": "ip\\design_1_ilmb_v10_3\\design_1_ilmb_v10_3.xci",
             "inst_hier_path": "microblaze_0_local_memory/ilmb_v10",
             "interface_ports": {
               "LMB_M": {
@@ -241,8 +255,8 @@
           },
           "dlmb_bram_if_cntlr": {
             "vlnv": "xilinx.com:ip:lmb_bram_if_cntlr:4.0",
-            "xci_name": "design_1_dlmb_bram_if_cntlr_2",
-            "xci_path": "ip\\design_1_dlmb_bram_if_cntlr_2\\design_1_dlmb_bram_if_cntlr_2.xci",
+            "xci_name": "design_1_dlmb_bram_if_cntlr_3",
+            "xci_path": "ip\\design_1_dlmb_bram_if_cntlr_3\\design_1_dlmb_bram_if_cntlr_3.xci",
             "inst_hier_path": "microblaze_0_local_memory/dlmb_bram_if_cntlr",
             "parameters": {
               "C_ECC": {
@@ -262,8 +276,8 @@
           },
           "ilmb_bram_if_cntlr": {
             "vlnv": "xilinx.com:ip:lmb_bram_if_cntlr:4.0",
-            "xci_name": "design_1_ilmb_bram_if_cntlr_2",
-            "xci_path": "ip\\design_1_ilmb_bram_if_cntlr_2\\design_1_ilmb_bram_if_cntlr_2.xci",
+            "xci_name": "design_1_ilmb_bram_if_cntlr_3",
+            "xci_path": "ip\\design_1_ilmb_bram_if_cntlr_3\\design_1_ilmb_bram_if_cntlr_3.xci",
             "inst_hier_path": "microblaze_0_local_memory/ilmb_bram_if_cntlr",
             "parameters": {
               "C_ECC": {
@@ -273,8 +287,8 @@
           },
           "lmb_bram": {
             "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
-            "xci_name": "design_1_lmb_bram_2",
-            "xci_path": "ip\\design_1_lmb_bram_2\\design_1_lmb_bram_2.xci",
+            "xci_name": "design_1_lmb_bram_3",
+            "xci_path": "ip\\design_1_lmb_bram_3\\design_1_lmb_bram_3.xci",
             "inst_hier_path": "microblaze_0_local_memory/lmb_bram",
             "parameters": {
               "Memory_Type": {
@@ -347,43 +361,21 @@
       },
       "mdm_1": {
         "vlnv": "xilinx.com:ip:mdm:3.2",
-        "xci_name": "design_1_mdm_1_2",
-        "xci_path": "ip\\design_1_mdm_1_2\\design_1_mdm_1_2.xci",
+        "xci_name": "design_1_mdm_1_3",
+        "xci_path": "ip\\design_1_mdm_1_3\\design_1_mdm_1_3.xci",
         "inst_hier_path": "mdm_1"
       },
       "rst_clk_wiz_0_100M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_rst_clk_wiz_0_100M_2",
-        "xci_path": "ip\\design_1_rst_clk_wiz_0_100M_2\\design_1_rst_clk_wiz_0_100M_2.xci",
-        "inst_hier_path": "rst_clk_wiz_0_100M",
-        "parameters": {
-          "RESET_BOARD_INTERFACE": {
-            "value": "Custom"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
+        "xci_name": "design_1_rst_clk_wiz_0_100M_3",
+        "xci_path": "ip\\design_1_rst_clk_wiz_0_100M_3\\design_1_rst_clk_wiz_0_100M_3.xci",
+        "inst_hier_path": "rst_clk_wiz_0_100M"
       },
-      "util_vector_logic_0": {
-        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-        "xci_name": "design_1_util_vector_logic_0_0",
-        "xci_path": "ip\\design_1_util_vector_logic_0_0\\design_1_util_vector_logic_0_0.xci",
-        "inst_hier_path": "util_vector_logic_0",
-        "parameters": {
-          "C_OPERATION": {
-            "value": "not"
-          },
-          "C_SIZE": {
-            "value": "1"
-          }
-        }
-      },
-      "AXI_GPIO_LEDs": {
+      "AXI_GPIO_LED": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "design_1_axi_gpio_0_2",
-        "xci_path": "ip\\design_1_axi_gpio_0_2\\design_1_axi_gpio_0_2.xci",
-        "inst_hier_path": "AXI_GPIO_LEDs",
+        "xci_name": "design_1_axi_gpio_0_4",
+        "xci_path": "ip\\design_1_axi_gpio_0_4\\design_1_axi_gpio_0_4.xci",
+        "inst_hier_path": "AXI_GPIO_LED",
         "parameters": {
           "GPIO_BOARD_INTERFACE": {
             "value": "led_4bits"
@@ -393,36 +385,31 @@
           }
         }
       },
-      "AXI_GPIO_BTNs": {
+      "AXI_GPIO_BUTTONS": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "design_1_axi_gpio_0_3",
-        "xci_path": "ip\\design_1_axi_gpio_0_3\\design_1_axi_gpio_0_3.xci",
-        "inst_hier_path": "AXI_GPIO_BTNs",
+        "xci_name": "design_1_axi_gpio_1_0",
+        "xci_path": "ip\\design_1_axi_gpio_1_0\\design_1_axi_gpio_1_0.xci",
+        "inst_hier_path": "AXI_GPIO_BUTTONS",
         "parameters": {
-          "C_GPIO_WIDTH": {
-            "value": "4"
-          }
-        }
-      },
-      "axi_uartlite_0": {
-        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
-        "xci_name": "design_1_axi_uartlite_0_1",
-        "xci_path": "ip\\design_1_axi_uartlite_0_1\\design_1_axi_uartlite_0_1.xci",
-        "inst_hier_path": "axi_uartlite_0",
-        "parameters": {
-          "UARTLITE_BOARD_INTERFACE": {
-            "value": "Custom"
+          "GPIO_BOARD_INTERFACE": {
+            "value": "push_buttons_4bits"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
           }
         }
       },
+      "axi_uartlite_0": {
+        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
+        "xci_name": "design_1_axi_uartlite_0_2",
+        "xci_path": "ip\\design_1_axi_uartlite_0_2\\design_1_axi_uartlite_0_2.xci",
+        "inst_hier_path": "axi_uartlite_0"
+      },
       "microblaze_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\design_1_microblaze_0_axi_periph_2\\design_1_microblaze_0_axi_periph_2.xci",
+        "xci_path": "ip\\design_1_microblaze_0_axi_periph_3\\design_1_microblaze_0_axi_periph_3.xci",
         "inst_hier_path": "microblaze_0_axi_periph",
-        "xci_name": "design_1_microblaze_0_axi_periph_2",
+        "xci_name": "design_1_microblaze_0_axi_periph_3",
         "parameters": {
           "NUM_MI": {
             "value": "3"
@@ -532,8 +519,8 @@
         "components": {
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
-            "xci_name": "design_1_xbar_2",
-            "xci_path": "ip\\design_1_xbar_2\\design_1_xbar_2.xci",
+            "xci_name": "design_1_xbar_3",
+            "xci_path": "ip\\design_1_xbar_3\\design_1_xbar_3.xci",
             "inst_hier_path": "microblaze_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
@@ -866,16 +853,16 @@
       }
     },
     "interface_nets": {
-      "AXI_GPIO_BTNs_GPIO": {
-        "interface_ports": [
-          "btn",
-          "AXI_GPIO_BTNs/GPIO"
-        ]
-      },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "led_4bits",
-          "AXI_GPIO_LEDs/GPIO"
+          "AXI_GPIO_LED/GPIO"
+        ]
+      },
+      "axi_gpio_1_GPIO": {
+        "interface_ports": [
+          "push_buttons_4bits",
+          "AXI_GPIO_BUTTONS/GPIO"
         ]
       },
       "axi_uartlite_0_UART": {
@@ -893,13 +880,13 @@
       "microblaze_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M00_AXI",
-          "AXI_GPIO_BTNs/S_AXI"
+          "AXI_GPIO_LED/S_AXI"
         ]
       },
       "microblaze_0_axi_periph_M01_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M01_AXI",
-          "AXI_GPIO_LEDs/S_AXI"
+          "AXI_GPIO_BUTTONS/S_AXI"
         ]
       },
       "microblaze_0_axi_periph_M02_AXI": {
@@ -941,10 +928,10 @@
           "microblaze_0_local_memory/LMB_Clk",
           "rst_clk_wiz_0_100M/slowest_sync_clk",
           "microblaze_0_axi_periph/S00_ACLK",
-          "AXI_GPIO_BTNs/s_axi_aclk",
+          "AXI_GPIO_LED/s_axi_aclk",
           "microblaze_0_axi_periph/M00_ACLK",
           "microblaze_0_axi_periph/ACLK",
-          "AXI_GPIO_LEDs/s_axi_aclk",
+          "AXI_GPIO_BUTTONS/s_axi_aclk",
           "microblaze_0_axi_periph/M01_ACLK",
           "axi_uartlite_0/s_axi_aclk",
           "microblaze_0_axi_periph/M02_ACLK"
@@ -953,8 +940,14 @@
       "reset_1": {
         "ports": [
           "reset",
-          "util_vector_logic_0/Op1",
-          "clk_wiz_0/reset"
+          "reset_inv_0/Op1"
+        ]
+      },
+      "reset_inv_0_Res": {
+        "ports": [
+          "reset_inv_0/Res",
+          "clk_wiz_0/reset",
+          "rst_clk_wiz_0_100M/ext_reset_in"
         ]
       },
       "rst_clk_wiz_0_100M_bus_struct_reset": {
@@ -973,10 +966,10 @@
         "ports": [
           "rst_clk_wiz_0_100M/peripheral_aresetn",
           "microblaze_0_axi_periph/S00_ARESETN",
-          "AXI_GPIO_BTNs/s_axi_aresetn",
+          "AXI_GPIO_LED/s_axi_aresetn",
           "microblaze_0_axi_periph/M00_ARESETN",
           "microblaze_0_axi_periph/ARESETN",
-          "AXI_GPIO_LEDs/s_axi_aresetn",
+          "AXI_GPIO_BUTTONS/s_axi_aresetn",
           "microblaze_0_axi_periph/M01_ARESETN",
           "axi_uartlite_0/s_axi_aresetn",
           "microblaze_0_axi_periph/M02_ARESETN"
@@ -987,12 +980,6 @@
           "sys_clock",
           "clk_wiz_0/clk_in1"
         ]
-      },
-      "util_vector_logic_0_Res": {
-        "ports": [
-          "util_vector_logic_0/Res",
-          "rst_clk_wiz_0_100M/ext_reset_in"
-        ]
       }
     },
     "addressing": {
@@ -1000,13 +987,13 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_AXI_GPIO_BTNs_Reg": {
-                "address_block": "/AXI_GPIO_BTNs/S_AXI/Reg",
+              "SEG_axi_gpio_0_Reg": {
+                "address_block": "/AXI_GPIO_LED/S_AXI/Reg",
                 "offset": "0x40000000",
                 "range": "64K"
               },
-              "SEG_AXI_GPIO_LEDs_Reg": {
-                "address_block": "/AXI_GPIO_LEDs/S_AXI/Reg",
+              "SEG_axi_gpio_1_Reg": {
+                "address_block": "/AXI_GPIO_BUTTONS/S_AXI/Reg",
                 "offset": "0x40010000",
                 "range": "64K"
               },
@@ -1032,21 +1019,6 @@
             }
           }
         }
-      }
-    },
-    "elf_association": {
-      "file": {
-        "name": "C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf",
-        "type": "ELF",
-        "checksum": "3441434299",
-        "IsVisible": "1",
-        "ScopedToRef": "design_1",
-        "ScopedToCell": [
-          "microblaze_0"
-        ],
-        "UsedIn": [
-          "implementation"
-        ]
       }
     }
   }

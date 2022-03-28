@@ -3,7 +3,7 @@
 	"modules": {
 		"design_1": {
 			"proto_instances": {
-				"/AXI_GPIO_BTNs/S_AXI": {
+				"/AXI_GPIO_BUTTONS/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "s_axi_aclk"},
@@ -27,7 +27,7 @@
 						"WVALID": { "actual": "s_axi_wvalid"}
 					}
 				},
-				"/AXI_GPIO_LEDs/S_AXI": {
+				"/AXI_GPIO_LED/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "s_axi_aclk"},

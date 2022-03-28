@@ -10,12 +10,9 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1419.117 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
-WARNING: [filemgmt 56-12] File 'C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf' cannot be added to the project because it already exists in the project, skipping this file
-INFO: [Project 1-1697] Successfully associated ELF file C:/Users/rikir/Documents/Vitis/Getting_started_Vivado_Vitis/Getting_started_VIVADO_VITIS/Debug/Getting_started_VIVADO_VITIS.elf to BD design_1 and cell microblaze_0.
 Command: read_checkpoint -auto_incremental -incremental C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -28,73 +25,71 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21148
+INFO: [Synth 8-7075] Helper process launched with PID 11416
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1419.117 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_3' (2#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_2' (3#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_1' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_axi_uartlite_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_1' (4#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_axi_uartlite_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_1' is unconnected for instance 'axi_uartlite_0' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:196]
-WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_1' has 22 connections declared, but only 21 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:196]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_1' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_clk_wiz_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_1' (5#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_clk_wiz_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_mdm_1_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_2' (6#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_mdm_1_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_1' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_microblaze_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_1' (7#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_microblaze_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_1' is unconnected for instance 'microblaze_0' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:235]
-WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_1' has 52 connections declared, but only 51 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:235]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_2' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:404]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:982]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (8#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:982]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1114]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (9#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1114]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1246]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (10#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1246]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1612]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (11#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1612]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_xbar_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_2' (12#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_xbar_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_2' is unconnected for instance 'xbar' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:941]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_2' is unconnected for instance 'xbar' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:941]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_2' has 40 connections declared, but only 38 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:941]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_2' (13#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:404]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1378]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_bram_if_cntlr_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_2' (14#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_bram_if_cntlr_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_v10_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_2' (15#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_v10_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_2' is unconnected for instance 'dlmb_v10' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1524]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_2' has 25 connections declared, but only 24 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1524]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_bram_if_cntlr_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_2' (16#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_bram_if_cntlr_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_v10_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_2' (17#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_v10_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_2' is unconnected for instance 'ilmb_v10' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1570]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_2' has 25 connections declared, but only 24 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1570]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_lmb_bram_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_2' (18#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_lmb_bram_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_2' is unconnected for instance 'lmb_bram' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1595]
-WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_2' is unconnected for instance 'lmb_bram' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1595]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_2' has 16 connections declared, but only 14 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1595]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (19#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1378]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_rst_clk_wiz_0_100M_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_2' (20#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_rst_clk_wiz_0_100M_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_0_100M_2' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:390]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_0_100M_2' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:390]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_2' has 10 connections declared, but only 8 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:390]
-INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (21#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-904-LAPTOP-LB6J3CUA/realtime/design_1_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (22#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (23#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (1#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_4' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_4' (2#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_axi_gpio_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_axi_uartlite_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_2' (3#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_axi_uartlite_0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_2' is unconnected for instance 'axi_uartlite_0' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:186]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_2' has 22 connections declared, but only 21 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:186]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_clk_wiz_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_2' (4#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_clk_wiz_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_3' (5#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_2' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_microblaze_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_2' (6#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_microblaze_0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_2' is unconnected for instance 'microblaze_0' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:225]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_2' has 52 connections declared, but only 51 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:225]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_3' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:394]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:972]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (7#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:972]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1104]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (8#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1104]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1236]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (9#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1236]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1602]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (10#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_xbar_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_3' (11#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_xbar_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_3' is unconnected for instance 'xbar' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:931]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_3' is unconnected for instance 'xbar' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:931]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_3' has 40 connections declared, but only 38 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:931]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_3' (12#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:394]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1368]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_3' (13#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_3' (14#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_dlmb_v10_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_3' is unconnected for instance 'dlmb_v10' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1514]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_3' has 25 connections declared, but only 24 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1514]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_3' (15#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_3' (16#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_ilmb_v10_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_3' is unconnected for instance 'ilmb_v10' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1560]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_3' has 25 connections declared, but only 24 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1560]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_lmb_bram_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_3' (17#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_lmb_bram_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_3' is unconnected for instance 'lmb_bram' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1585]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_3' is unconnected for instance 'lmb_bram' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1585]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_3' has 16 connections declared, but only 14 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1585]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (18#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:1368]
+INFO: [Synth 8-6157] synthesizing module 'design_1_reset_inv_0_0' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_reset_inv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_reset_inv_0_0' (19#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_reset_inv_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_3' [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_rst_clk_wiz_0_100M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_3' (20#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/.Xil/Vivado-22244-LAPTOP-LB6J3CUA/realtime/design_1_rst_clk_wiz_0_100M_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_0_100M_3' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:383]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_0_100M_3' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:383]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_3' has 10 connections declared, but only 8 given [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:383]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (21#1) [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (22#1) [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
@@ -111,61 +106,59 @@ WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_8RVYHO is either 
 WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1419.117 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1419.117 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1419.117 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1419.117 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1418.941 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/design_1_dlmb_v10_2/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/design_1_dlmb_v10_2/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/design_1_ilmb_v10_2/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/design_1_ilmb_v10_2/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_2/design_1_dlmb_bram_if_cntlr_2/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_2/design_1_dlmb_bram_if_cntlr_2/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_2/design_1_ilmb_bram_if_cntlr_2/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_2/design_1_ilmb_bram_if_cntlr_2/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_2/design_1_lmb_bram_2/design_1_lmb_bram_2_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_2/design_1_lmb_bram_2/design_1_lmb_bram_2_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_2/design_1_mdm_1_2/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_2/design_1_mdm_1_2/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_2/design_1_rst_clk_wiz_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/AXI_GPIO_LEDs'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/AXI_GPIO_LEDs'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/AXI_GPIO_BTNs'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/AXI_GPIO_BTNs'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_reset_inv_0_0/design_1_reset_inv_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/reset_inv_0'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_reset_inv_0_0/design_1_reset_inv_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/reset_inv_0'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_2/design_1_microblaze_0_2/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_2/design_1_microblaze_0_2/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_3/design_1_dlmb_v10_3/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_3/design_1_dlmb_v10_3/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_3/design_1_ilmb_v10_3/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_3/design_1_ilmb_v10_3/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_3/design_1_lmb_bram_3/design_1_lmb_bram_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_3/design_1_lmb_bram_3/design_1_lmb_bram_3_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_3/design_1_mdm_1_3/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_mdm_1_3/design_1_mdm_1_3/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3/design_1_rst_clk_wiz_0_100M_3_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/AXI_GPIO_LED'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/AXI_GPIO_LED'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_GPIO_BUTTONS'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/AXI_GPIO_BUTTONS'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_2/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
 Parsing XDC File [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc]
 Finished Parsing XDC File [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-35-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -174,32 +167,32 @@ Parsing XDC File [C:/Users/rikir/Documents/FPGA_projects/project_getting_started
 Finished Parsing XDC File [C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1420.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.941 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1420.691 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1418.941 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/reset_inv_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
@@ -208,17 +201,16 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_mem
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI_GPIO_LEDs. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI_GPIO_BTNs. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI_GPIO_LED. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI_GPIO_BUTTONS. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -240,34 +232,34 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_3 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1418.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1432.691 ; gain = 13.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1427.453 ; gain = 8.336
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1432.914 ; gain = 13.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1444.352 ; gain = 25.234
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1452.027 ; gain = 33.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -285,105 +277,102 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+-------------------------------+----------+
-|      |BlackBox name                  |Instances |
-+------+-------------------------------+----------+
-|1     |design_1_xbar_2                |         1|
-|2     |design_1_axi_gpio_0_3          |         1|
-|3     |design_1_axi_gpio_0_2          |         1|
-|4     |design_1_axi_uartlite_0_1      |         1|
-|5     |design_1_clk_wiz_0_1           |         1|
-|6     |design_1_mdm_1_2               |         1|
-|7     |design_1_microblaze_0_1        |         1|
-|8     |design_1_rst_clk_wiz_0_100M_2  |         1|
-|9     |design_1_util_vector_logic_0_0 |         1|
-|10    |design_1_dlmb_bram_if_cntlr_2  |         1|
-|11    |design_1_dlmb_v10_2            |         1|
-|12    |design_1_ilmb_bram_if_cntlr_2  |         1|
-|13    |design_1_ilmb_v10_2            |         1|
-|14    |design_1_lmb_bram_2            |         1|
-+------+-------------------------------+----------+
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_xbar_3               |         1|
+|2     |design_1_axi_gpio_1_0         |         1|
+|3     |design_1_axi_gpio_0_4         |         1|
+|4     |design_1_axi_uartlite_0_2     |         1|
+|5     |design_1_clk_wiz_0_2          |         1|
+|6     |design_1_mdm_1_3              |         1|
+|7     |design_1_microblaze_0_2       |         1|
+|8     |design_1_reset_inv_0_0        |         1|
+|9     |design_1_rst_clk_wiz_0_100M_3 |         1|
+|10    |design_1_dlmb_bram_if_cntlr_3 |         1|
+|11    |design_1_dlmb_v10_3           |         1|
+|12    |design_1_ilmb_bram_if_cntlr_3 |         1|
+|13    |design_1_ilmb_v10_3           |         1|
+|14    |design_1_lmb_bram_3           |         1|
++------+------------------------------+----------+
 
 Report Cell Usage: 
-+------+-----------------------------+------+
-|      |Cell                         |Count |
-+------+-----------------------------+------+
-|1     |design_1_axi_gpio_0          |     2|
-|3     |design_1_axi_uartlite_0      |     1|
-|4     |design_1_clk_wiz_0           |     1|
-|5     |design_1_dlmb_bram_if_cntlr  |     1|
-|6     |design_1_dlmb_v10            |     1|
-|7     |design_1_ilmb_bram_if_cntlr  |     1|
-|8     |design_1_ilmb_v10            |     1|
-|9     |design_1_lmb_bram            |     1|
-|10    |design_1_mdm_1               |     1|
-|11    |design_1_microblaze_0        |     1|
-|12    |design_1_rst_clk_wiz_0_100M  |     1|
-|13    |design_1_util_vector_logic_0 |     1|
-|14    |design_1_xbar                |     1|
-|15    |IBUF                         |     2|
-|16    |IOBUF                        |     4|
-|17    |OBUF                         |     5|
-+------+-----------------------------+------+
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |design_1_axi_gpio_0         |     1|
+|2     |design_1_axi_gpio_1         |     1|
+|3     |design_1_axi_uartlite_0     |     1|
+|4     |design_1_clk_wiz_0          |     1|
+|5     |design_1_dlmb_bram_if_cntlr |     1|
+|6     |design_1_dlmb_v10           |     1|
+|7     |design_1_ilmb_bram_if_cntlr |     1|
+|8     |design_1_ilmb_v10           |     1|
+|9     |design_1_lmb_bram           |     1|
+|10    |design_1_mdm_1              |     1|
+|11    |design_1_microblaze_0       |     1|
+|12    |design_1_reset_inv_0        |     1|
+|13    |design_1_rst_clk_wiz_0_100M |     1|
+|14    |design_1_xbar               |     1|
+|15    |IBUF                        |     6|
+|16    |OBUF                        |     5|
++------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1450.137 ; gain = 22.684
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1450.137 ; gain = 31.020
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1457.809 ; gain = 38.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.809 ; gain = 38.867
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1450.137 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1469.875 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1480.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+No Unisim elements were transformed.
 
-Synth Design complete, checksum: cc935909
+Synth Design complete, checksum: d2ca6c76
 INFO: [Common 17-83] Releasing license: Synthesis
-71 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1473.645 ; gain = 54.527
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1480.457 ; gain = 61.516
 INFO: [Common 17-1381] The checkpoint 'C:/Users/rikir/Documents/FPGA_projects/project_getting_started_Vivado_Vitis/project_getting_started_Vivado_Vitis.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 17:53:04 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 29 00:14:49 2022...
