@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log design_1_ilmb_v10_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_v10_1.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_ilmb_v10_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1418.758 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_v10_1, cache-ID = 829af4cb42e2e5f7.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 12:13:59 2022...
